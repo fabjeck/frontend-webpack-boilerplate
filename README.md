@@ -1,4 +1,4 @@
-# Webpack Boilerplate #
+# Frontend Webpack Boilerplate #
 
 Webpack 4 boilerplate with development/production optimization...
 
