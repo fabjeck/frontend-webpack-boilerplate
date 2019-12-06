@@ -1,7 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -33,10 +32,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      inject: 'head',
-    }),
-    new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: 'defer',
+      inject: 'body',
     }),
   ],
 };
